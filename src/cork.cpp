@@ -30,8 +30,10 @@
 
 void freeCorkTriMesh(CorkTriMesh *mesh)
 {
-    delete[] mesh->triangles;
-    delete[] mesh->vertices;
+    if(mesh->triangles) delete[] mesh->triangles;
+    if(mesh->vertices) delete[] mesh->vertices;
+    mesh->triangles = nullptr;
+    mesh->vertices = nullptr;
     mesh->n_triangles = 0;
     mesh->n_vertices = 0;
 }

@@ -42,6 +42,7 @@ struct MinimalTriangleData
 {
     // Vertex Ids: (only used in raw mesh form)
     int a, b, c;
+    Vec3d normal;
 };
 
 // Raw mesh presents an exposed interface to a mesh.

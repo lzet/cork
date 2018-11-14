@@ -60,4 +60,7 @@ int writeIFS(std::string filename, FileMesh *mesh);
 int readOFF(std::string filename, FileMesh *mesh);
 int writeOFF(std::string filename, FileMesh *mesh);
 
+int readSTL(std::string filename, FileMesh *mesh);
+int writeSTL(std::string filename, FileMesh *mesh);
+
 } // end namespace Files
